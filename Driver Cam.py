@@ -22,7 +22,7 @@ root.title('Driver Cam')
 frame.config(background='light blue')
 label = Label(frame, text="Driver Cam",bg='light blue',font=('Times 35 bold'))
 label.pack(side=TOP)
-filename = PhotoImage(file="C:/Users/Mir/Desktop/Spyder tuto/Drowsiness-monitoring/demo.png")
+filename = PhotoImage(file="C:/Users/Mir/Desktop/Spyder/Drowsiness-monitoring/demo.png")
 background_label = Label(frame,image=filename)
 background_label.pack(side=TOP)
 
@@ -32,7 +32,7 @@ def hel():
    help(cv2)
 
 def Contri():
-   tkinter.messagebox.showinfo("Contributors","\n1.Mayur Kadam\n2. Abhishek Ezhava \n3. Rajendra Patil \n")
+   tkinter.messagebox.showinfo("Contributors","\Mir\n2. Azad \n3. Rashid \n")
 
 
 def anotherWin():
@@ -86,7 +86,7 @@ def webrec():
 
 def webdet():
    capture =cv2.VideoCapture(0)
-   face_cascade = cv2.CascadeClassifier("C:/Users/Mir/Desktop/Spyder tuto/Drowsiness-monitoring/lbpcascade_frontalface.xml")
+   face_cascade = cv2.CascadeClassifier("C:/Users/Mir/Desktop/Spyder/Drowsiness-monitoring/lbpcascade_frontalface.xml")
    eye_glass = cv2.CascadeClassifier("C:/Users/Mir/Desktop/Spyder tuto/Drowsiness-monitoring/haarcascade_eye_tree_eyeglasses.xml")
    
 
@@ -116,7 +116,7 @@ def webdet():
    cv2.destroyAllWindows()
 def webdetRec():
    capture =cv2.VideoCapture(0)
-   face_cascade = cv2.CascadeClassifier("C:/Users/Mir/Desktop/Spyder tuto/Drowsiness-monitoring/lbpcascade_frontalface.xml")
+   face_cascade = cv2.CascadeClassifier("C:/Users/Mir/Desktop/Spyder/Drowsiness-monitoring/lbpcascade_frontalface.xml")
    eye_glass = cv2.CascadeClassifier("C:/Users/Mir/Desktop/Spyder tuto/Drowsiness-monitoring/haarcascade_eye_tree_eyeglasses.xml")
    fourcc=cv2.VideoWriter_fourcc(*"XVID") 
    op=cv2.VideoWriter("Sample2.avi",fourcc,9.0,(640,480))
